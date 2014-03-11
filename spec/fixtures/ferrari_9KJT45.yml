@@ -1,0 +1,100 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.datamarket.azure.com/Data.ashx/opendata.rdw/VRTG.Open.Data/v1/KENT_VRTG_O_DAT('9KJT45')
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.datamarket.azure.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - application/atom+xml
+      Vary:
+      - Accept-Encoding
+      Server:
+      - Microsoft-IIS/8.0
+      X-Content-Type-Options:
+      - nosniff
+      Dataserviceversion:
+      - 1.0;
+      Activityid:
+      - af2bc74a-781d-4179-ae3f-4666730b6f90
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Access-Control-Allow-Headers:
+      - Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Max-Age:
+      - '604800'
+      Date:
+      - Tue, 11 Mar 2014 18:09:05 GMT
+      Content-Length:
+      - '1185'
+    body:
+      encoding: UTF-8
+      string: "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>\r\n<entry
+        xml:base=\"https://api.datamarket.azure.com/Data.ashx/opendata.rdw/VRTG.Open.Data/v1/\"
+        xmlns:d=\"http://schemas.microsoft.com/ado/2007/08/dataservices\" xmlns:m=\"http://schemas.microsoft.com/ado/2007/08/dataservices/metadata\"
+        xmlns=\"http://www.w3.org/2005/Atom\">\r\n  <id>https://api.datamarket.azure.com/Data.ashx/opendata.rdw/VRTG.Open.Data/v1/KENT_VRTG_O_DAT('9KJT45')</id>\r\n
+        \ <title type=\"text\"></title>\r\n  <updated>2014-03-11T18:09:05Z</updated>\r\n
+        \ <author>\r\n    <name />\r\n  </author>\r\n  <link rel=\"edit\" title=\"KENT_VRTG_O_DAT\"
+        href=\"KENT_VRTG_O_DAT('9KJT45')\" />\r\n  <category term=\"opendata.rdw.VRTG.Open.Data.KENT_VRTG_O_DAT\"
+        scheme=\"http://schemas.microsoft.com/ado/2007/08/dataservices/scheme\" />\r\n
+        \ <content type=\"application/xml\">\r\n    <m:properties>\r\n      <d:Aantalcilinders
+        m:type=\"Edm.Int16\">12</d:Aantalcilinders>\r\n      <d:Aantalstaanplaatsen
+        m:type=\"Edm.Int16\" m:null=\"true\" />\r\n      <d:Aantalzitplaatsen m:type=\"Edm.Int16\">2</d:Aantalzitplaatsen>\r\n
+        \     <d:BPM m:type=\"Edm.Int32\">82168</d:BPM>\r\n      <d:Brandstofverbruikbuitenweg
+        m:type=\"Edm.Decimal\">14.70</d:Brandstofverbruikbuitenweg>\r\n      <d:Brandstofverbruikgecombineerd
+        m:type=\"Edm.Decimal\">21.30</d:Brandstofverbruikgecombineerd>\r\n      <d:Brandstofverbruikstad
+        m:type=\"Edm.Decimal\">32.70</d:Brandstofverbruikstad>\r\n      <d:Catalogusprijs
+        m:type=\"Edm.Int32\" m:null=\"true\" />\r\n      <d:Cilinderinhoud m:type=\"Edm.Int32\">5999</d:Cilinderinhoud>\r\n
+        \     <d:CO2uitstootgecombineerd m:type=\"Edm.Int16\">490</d:CO2uitstootgecombineerd>\r\n
+        \     <d:Datumaanvangtenaamstelling m:type=\"Edm.DateTime\">2014-02-11T00:00:00</d:Datumaanvangtenaamstelling>\r\n
+        \     <d:DatumeersteafgifteNederland m:type=\"Edm.DateTime\">2013-05-03T00:00:00</d:DatumeersteafgifteNederland>\r\n
+        \     <d:Datumeerstetoelating m:type=\"Edm.DateTime\">2006-07-25T00:00:00</d:Datumeerstetoelating>\r\n
+        \     <d:Eerstekleur>ROOD</d:Eerstekleur>\r\n      <d:G3installatie>N.v.t.</d:G3installatie>\r\n
+        \     <d:Handelsbenaming>599</d:Handelsbenaming>\r\n      <d:Hoofdbrandstof>Benzine</d:Hoofdbrandstof>\r\n
+        \     <d:Inrichting>coupe</d:Inrichting>\r\n      <d:Kenteken>9KJT45</d:Kenteken>\r\n
+        \     <d:Laadvermogen m:type=\"Edm.Int32\" m:null=\"true\" />\r\n      <d:Massaleegvoertuig
+        m:type=\"Edm.Int32\">1680</d:Massaleegvoertuig>\r\n      <d:Massarijklaar
+        m:type=\"Edm.Int32\">1780</d:Massarijklaar>\r\n      <d:Maximaleconstructiesnelheid
+        m:type=\"Edm.Int16\" m:null=\"true\" />\r\n      <d:Maximumtetrekkenmassaautonoomgeremd
+        m:type=\"Edm.Int32\" m:null=\"true\" />\r\n      <d:Maximumtetrekkenmassageremd
+        m:type=\"Edm.Int32\" m:null=\"true\" />\r\n      <d:Maximumtetrekkenmassamiddenasgeremd
+        m:type=\"Edm.Int32\" m:null=\"true\" />\r\n      <d:Maximumtetrekkenmassaongeremd
+        m:type=\"Edm.Int32\" m:null=\"true\" />\r\n      <d:Maximumtetrekkenmassaopleggergeremd
+        m:type=\"Edm.Int32\" m:null=\"true\" />\r\n      <d:Merk>FERRARI</d:Merk>\r\n
+        \     <d:Milieuclassificatie>Niet geregistreerd</d:Milieuclassificatie>\r\n
+        \     <d:Nevenbrandstof>Niet geregistreerd</d:Nevenbrandstof>\r\n      <d:Retrofitroetfilter>Nee</d:Retrofitroetfilter>\r\n
+        \     <d:Toegestanemaximummassavoertuig m:type=\"Edm.Int32\">2000</d:Toegestanemaximummassavoertuig>\r\n
+        \     <d:Tweedekleur>Niet geregistreerd</d:Tweedekleur>\r\n      <d:Vermogen
+        m:type=\"Edm.Int16\">456</d:Vermogen>\r\n      <d:Vermogenbromsnorfiets m:type=\"Edm.Decimal\"
+        m:null=\"true\" />\r\n      <d:VervaldatumAPK m:type=\"Edm.DateTime\">2014-10-31T00:00:00</d:VervaldatumAPK>\r\n
+        \     <d:Voertuigsoort>Personenauto</d:Voertuigsoort>\r\n      <d:Wachtopkeuren>Nee</d:Wachtopkeuren>\r\n
+        \     <d:WAMverzekerdgeregistreerd>Nee</d:WAMverzekerdgeregistreerd>\r\n      <d:Zuinigheidslabel>G</d:Zuinigheidslabel>\r\n
+        \   </m:properties>\r\n  </content>\r\n</entry>"
+    http_version: 
+  recorded_at: Tue, 11 Mar 2014 18:08:55 GMT
+recorded_with: VCR 2.8.0
