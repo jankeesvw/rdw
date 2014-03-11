@@ -1,5 +1,11 @@
 require "rdw/version"
 
-module Rdw
-  # Your code goes here...
+module RDW
+  def self.car_info_for(license_plate)
+    CarInfo.new
+  end
+
+  class CarInfo
+
+  end
 end
