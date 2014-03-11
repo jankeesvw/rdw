@@ -8,9 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Rdw::VERSION
   spec.authors       = ["Jankees van Woezik"]
   spec.email         = ["jankees@base42.nl"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
-  spec.homepage      = ""
+  spec.summary       = %q{Get Dutch car information from the RDW}
+  spec.homepage      = "https://github.com/jankeesvw/rdw"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
