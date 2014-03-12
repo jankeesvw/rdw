@@ -32,7 +32,7 @@ There is a rate limit on this api (50,000 per month), more information can be fo
 
 ## Contributing
 
-1. Fork it ( http://github.com/<my-github-username>/rdw/fork )
+1. Fork it ( `http://github.com/<my-github-username>/rdw/fork` )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
