@@ -22,6 +22,7 @@ describe RDW::CarInfo do
     its("fuel_type") { should eq "Benzine" }
     its("brand") { should eq "FERRARI" }
     its("energy_label") { should eq "G" }
+    its("inspect") { should eq "<RDW::CarInfo license_plate:'9KJT45' brand:'FERRARI' fuel_type:'Benzine'>" }
   end
 
   context "given the license plate of a New Beetle" do
@@ -44,6 +45,7 @@ describe RDW::CarInfo do
     its("fuel_type") { should eq "Benzine" }
     its("brand") { should eq "VOLKSWAGEN" }
     its("energy_label") { should eq "" }
+    its("inspect") { should eq "<RDW::CarInfo license_plate:'87PVF5' brand:'VOLKSWAGEN' fuel_type:'Benzine'>" }
   end
 
   context "given the license plate of a T2 bus" do
@@ -66,6 +68,7 @@ describe RDW::CarInfo do
     its("fuel_type") { should eq "LPG (Liquified Petrol Gas)" }
     its("brand") { should eq "VOLKSWAGEN" }
     its("energy_label") { should eq "" }
+    its("inspect") { should eq "<RDW::CarInfo license_plate:'67YA03' brand:'VOLKSWAGEN' fuel_type:'LPG (Liquified Petrol Gas)'>" }
   end
 
 end

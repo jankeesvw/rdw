@@ -59,6 +59,10 @@ module RDW
       parse("Zuinigheidslabel")
     end
 
+    def inspect
+      "<RDW::CarInfo license_plate:'#{@license_plate}' brand:'#{brand}' fuel_type:'#{fuel_type}'>"
+    end
+
   private
 
     def parse(attribute_name)
