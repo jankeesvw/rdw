@@ -1,0 +1,100 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.datamarket.azure.com/Data.ashx/opendata.rdw/VRTG.Open.Data/v1/KENT_VRTG_O_DAT('87PVF5')
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.datamarket.azure.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - application/atom+xml
+      Vary:
+      - Accept-Encoding
+      Server:
+      - Microsoft-IIS/8.0
+      X-Content-Type-Options:
+      - nosniff
+      Dataserviceversion:
+      - 1.0;
+      Activityid:
+      - ceb23e53-d067-4b55-9928-16b62e355f1c
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Access-Control-Allow-Headers:
+      - Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Max-Age:
+      - '604800'
+      Date:
+      - Wed, 12 Mar 2014 06:39:29 GMT
+      Content-Length:
+      - '1170'
+    body:
+      encoding: UTF-8
+      string: "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>\r\n<entry
+        xml:base=\"https://api.datamarket.azure.com/Data.ashx/opendata.rdw/VRTG.Open.Data/v1/\"
+        xmlns:d=\"http://schemas.microsoft.com/ado/2007/08/dataservices\" xmlns:m=\"http://schemas.microsoft.com/ado/2007/08/dataservices/metadata\"
+        xmlns=\"http://www.w3.org/2005/Atom\">\r\n  <id>https://api.datamarket.azure.com/Data.ashx/opendata.rdw/VRTG.Open.Data/v1/KENT_VRTG_O_DAT('87PVF5')</id>\r\n
+        \ <title type=\"text\"></title>\r\n  <updated>2014-03-12T06:39:30Z</updated>\r\n
+        \ <author>\r\n    <name />\r\n  </author>\r\n  <link rel=\"edit\" title=\"KENT_VRTG_O_DAT\"
+        href=\"KENT_VRTG_O_DAT('87PVF5')\" />\r\n  <category term=\"opendata.rdw.VRTG.Open.Data.KENT_VRTG_O_DAT\"
+        scheme=\"http://schemas.microsoft.com/ado/2007/08/dataservices/scheme\" />\r\n
+        \ <content type=\"application/xml\">\r\n    <m:properties>\r\n      <d:Aantalcilinders
+        m:type=\"Edm.Int16\">4</d:Aantalcilinders>\r\n      <d:Aantalstaanplaatsen
+        m:type=\"Edm.Int16\" m:null=\"true\" />\r\n      <d:Aantalzitplaatsen m:type=\"Edm.Int16\">4</d:Aantalzitplaatsen>\r\n
+        \     <d:BPM m:type=\"Edm.Int32\">4563</d:BPM>\r\n      <d:Brandstofverbruikbuitenweg
+        m:type=\"Edm.Decimal\" m:null=\"true\" />\r\n      <d:Brandstofverbruikgecombineerd
+        m:type=\"Edm.Decimal\" m:null=\"true\" />\r\n      <d:Brandstofverbruikstad
+        m:type=\"Edm.Decimal\" m:null=\"true\" />\r\n      <d:Catalogusprijs m:type=\"Edm.Int32\"
+        m:null=\"true\" />\r\n      <d:Cilinderinhoud m:type=\"Edm.Int32\">1595</d:Cilinderinhoud>\r\n
+        \     <d:CO2uitstootgecombineerd m:type=\"Edm.Int16\" m:null=\"true\" />\r\n
+        \     <d:Datumaanvangtenaamstelling m:type=\"Edm.DateTime\">2014-02-20T00:00:00</d:Datumaanvangtenaamstelling>\r\n
+        \     <d:DatumeersteafgifteNederland m:type=\"Edm.DateTime\">2011-03-31T00:00:00</d:DatumeersteafgifteNederland>\r\n
+        \     <d:Datumeerstetoelating m:type=\"Edm.DateTime\">2000-01-20T00:00:00</d:Datumeerstetoelating>\r\n
+        \     <d:Eerstekleur>GRIJS</d:Eerstekleur>\r\n      <d:G3installatie>N.v.t.</d:G3installatie>\r\n
+        \     <d:Handelsbenaming>NEWBEETLE</d:Handelsbenaming>\r\n      <d:Hoofdbrandstof>Benzine</d:Hoofdbrandstof>\r\n
+        \     <d:Inrichting>hatchback</d:Inrichting>\r\n      <d:Kenteken>87PVF5</d:Kenteken>\r\n
+        \     <d:Laadvermogen m:type=\"Edm.Int32\" m:null=\"true\" />\r\n      <d:Massaleegvoertuig
+        m:type=\"Edm.Int32\">1220</d:Massaleegvoertuig>\r\n      <d:Massarijklaar
+        m:type=\"Edm.Int32\">1320</d:Massarijklaar>\r\n      <d:Maximaleconstructiesnelheid
+        m:type=\"Edm.Int16\" m:null=\"true\" />\r\n      <d:Maximumtetrekkenmassaautonoomgeremd
+        m:type=\"Edm.Int32\" m:null=\"true\" />\r\n      <d:Maximumtetrekkenmassageremd
+        m:type=\"Edm.Int32\">1000</d:Maximumtetrekkenmassageremd>\r\n      <d:Maximumtetrekkenmassamiddenasgeremd
+        m:type=\"Edm.Int32\" m:null=\"true\" />\r\n      <d:Maximumtetrekkenmassaongeremd
+        m:type=\"Edm.Int32\">660</d:Maximumtetrekkenmassaongeremd>\r\n      <d:Maximumtetrekkenmassaopleggergeremd
+        m:type=\"Edm.Int32\" m:null=\"true\" />\r\n      <d:Merk>VOLKSWAGEN</d:Merk>\r\n
+        \     <d:Milieuclassificatie>Niet geregistreerd</d:Milieuclassificatie>\r\n
+        \     <d:Nevenbrandstof>Niet geregistreerd</d:Nevenbrandstof>\r\n      <d:Retrofitroetfilter>Nee</d:Retrofitroetfilter>\r\n
+        \     <d:Toegestanemaximummassavoertuig m:type=\"Edm.Int32\">1630</d:Toegestanemaximummassavoertuig>\r\n
+        \     <d:Tweedekleur>Niet geregistreerd</d:Tweedekleur>\r\n      <d:Vermogen
+        m:type=\"Edm.Int16\">74</d:Vermogen>\r\n      <d:Vermogenbromsnorfiets m:type=\"Edm.Decimal\"
+        m:null=\"true\" />\r\n      <d:VervaldatumAPK m:type=\"Edm.DateTime\">2014-04-05T00:00:00</d:VervaldatumAPK>\r\n
+        \     <d:Voertuigsoort>Personenauto</d:Voertuigsoort>\r\n      <d:Wachtopkeuren>Nee</d:Wachtopkeuren>\r\n
+        \     <d:WAMverzekerdgeregistreerd>Nee</d:WAMverzekerdgeregistreerd>\r\n      <d:Zuinigheidslabel
+        m:null=\"true\" />\r\n    </m:properties>\r\n  </content>\r\n</entry>"
+    http_version: 
+  recorded_at: Wed, 12 Mar 2014 06:39:16 GMT
+recorded_with: VCR 2.8.0
