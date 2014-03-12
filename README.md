@@ -1,4 +1,4 @@
-# Free RDW vehicle information [![Build Status](https://travis-ci.org/jankeesvw/rdw.png)](https://travis-ci.org/jankeesvw/rdw)
+# Free RDW vehicle information [![Build Status](https://travis-ci.org/jankeesvw/rdw.png)](https://travis-ci.org/jankeesvw/rdw) [![Code Climate](https://codeclimate.com/github/jankeesvw/rdw.png)](https://codeclimate.com/github/jankeesvw/rdw) [![Dependency Status](https://gemnasium.com/jankeesvw/rdw.png)](https://gemnasium.com/jankeesvw/rdw)
 
 This project gets the public available vehicle information from the Dutch RDW.
 It makes the following attributes available:
