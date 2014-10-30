@@ -67,6 +67,10 @@ module RDW
       "<RDW::CarInfo license_plate:'#{@license_plate}' brand:'#{brand}' fuel_type:'#{fuel_type}'>"
     end
 
+    def raw_data_field(attribute_name)
+      parse(attribute_name)
+    end
+
   private
 
     def parse(attribute_name)
