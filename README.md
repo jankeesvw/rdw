@@ -16,6 +16,7 @@ It makes the following attributes available:
 * `BPM`
 * `co2_combined`
 * `fuel_type`
+* `stock_price`
 
 # Usage
 ``` ruby
@@ -30,6 +31,7 @@ require "RDW"
 
 # Notice
 There is a rate limit on this api (50,000 per month), more information can be found here: [rdw.nl](http://www.rdw.nl/Zakelijk/Paginas/Open-data.aspx).
+More details for the service can be found here: [http://www.rdw.nl/SiteCollectionDocuments/Over%20RDW/Naslagwerk/Beschrijving%20dataset%20Voertuigen.pdf].
 
 ## Contributing
 
