@@ -59,6 +59,10 @@ module RDW
       parse("Zuinigheidslabel")
     end
 
+    def stock_price
+      parse('Catalogusprijs')
+    end
+
     def inspect
       "<RDW::CarInfo license_plate:'#{@license_plate}' brand:'#{brand}' fuel_type:'#{fuel_type}'>"
     end
