@@ -67,6 +67,10 @@ module RDW
       parse('Catalogusprijs')
     end
 
+    def engine_power
+      parse('Vermogen')
+    end
+
     def inspect
       "<RDW::CarInfo license_plate:'#{@license_plate}' brand:'#{brand}' fuel_type:'#{fuel_type}'>"
     end
