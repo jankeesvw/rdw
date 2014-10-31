@@ -82,7 +82,12 @@ module RDW
   private
 
     def parse(attribute_name)
-      @xml.xpath("//d:#{attribute_name.to_s}").text
+      begin
+        @xml.xpath("//d:#{attribute_name.to_s}").text
+      rescue
+        nil
+      end
+
     end
 
     def perform_request!
