@@ -55,6 +55,10 @@ module RDW
       parse("Merk")
     end
 
+    def trade_name
+      parse("Handelsbenaming")
+    end
+
     def energy_label
       parse("Zuinigheidslabel")
     end
