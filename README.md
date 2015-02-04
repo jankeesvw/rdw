@@ -5,7 +5,8 @@ This project gets the public available vehicle information from the Dutch RDW.
 It makes the following attributes available:
 
 * `brand`
-* `color`
+* `first_color` (alias: `color`)
+* `second_color`
 * `number_of_cylinders`
 * `cylinder_capacity`
 * `number_of_seats`
@@ -13,10 +14,35 @@ It makes the following attributes available:
 * `fuel_efficiency_city`
 * `fuel_efficiency_combined`
 * `energy_label`
-* `BPM`
+* `bpm` (alias: `BPM`)
 * `co2_combined`
 * `fuel_type`
 * `stock_price`
+
+# Configuration (optional)
+A configuration is optional, here is an example configuration with explanation in the comments:
+``` ruby
+RDW.configure do |config|
+  # Leave this out of the configuration to not use the cache.
+  # This must be a cache object (with read, write and fetch methods).
+  config.cache = Rails.cache
+  
+  # If you are using the cache you can set a custom prefix for cache keys.
+  # Default value: rdw_
+  config.cache_prefix = 'rdw_data_'
+  
+  # If set to true, Dutch values will be converted to english. 
+  # This applies to colors, fuel types and unregistered values
+  # For example:
+  #   - 'ROOD' will be converted to 'red'
+  #   - 'Benzine' will be converted to 'gasoline'
+  #   - 'Niet geregistreerd' will be converted to 'unregistered'
+  #
+  # Default value: false
+  config.format_values = true
+end
+```
+Add the configuration in the `config/initializers` folder, name the file `rdw.rb` (any name will work).
 
 # Usage
 ``` ruby
