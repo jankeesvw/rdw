@@ -50,8 +50,8 @@ require "RDW"
 @vehicle = RDW::CarInfo.new("9KJT45")
 @vehicle.brand #=> FERRARI
 @vehicle.energy_label #=> G
-@vehicle.color #=> ROOD
-@vehicle.BPM #=> 82168
+@vehicle.first_color #=> ROOD
+@vehicle.bpm #=> 82168
 @vehicle.number_of_cylinders #=> 12
 ```
 
