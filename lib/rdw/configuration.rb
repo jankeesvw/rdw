@@ -5,13 +5,17 @@ module RDW
     # Configure a cache to be used. Leave nil if no cache should be used.
     attr_accessor :cache
 
-    # Cache key prefix
+    # If you are using the cache you can set a custom prefix for cache keys.
+    # Default value: rdw_
     attr_accessor :cache_prefix
 
-    # Set to true if you want values to be returned in english.
-    # Example for colors: 'ROOD' will return 'red'.
-    # Example for fuel types: 'Benzine' will return 'gasoline'.
-    # 'Niet geregistreerd' (which means that no value registered in the RDW database) will return 'unknown'.
+    # If set to true, Dutch values will be converted to english.
+    # This applies to colors, fuel types and unregistered values
+    # For example:
+    #   - 'ROOD' will be converted to 'red'
+    #   - 'Benzine' will be converted to 'gasoline'
+    #   - 'Niet geregistreerd' will be converted to 'unregistered'
+    # Default value: false
     attr_accessor :format_values
 
     def initialize

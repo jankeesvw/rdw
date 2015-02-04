@@ -44,7 +44,7 @@ describe RDW::CarInfo do
     it { should be_a RDW::CarInfo }
 
     its("first_color") { should eq "red" }
-    its("second_color") { should eq "unknown" }
+    its("second_color") { should eq "unregistered" }
     its("fuel_type") { should eq "gasoline" }
 
   end

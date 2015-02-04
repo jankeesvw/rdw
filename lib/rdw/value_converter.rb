@@ -49,10 +49,10 @@ module RDW
       new_color ? new_color : color
     end
 
-    # Returns 'unknown' instead of 'Niet geregistreerd'
-    def self.convert_unknown(value)
+    # Returns 'unregistered' instead of 'Niet geregistreerd'
+    def self.convert_unregistered(value)
       if value.downcase == 'niet geregistreerd'
-        return 'unknown'
+        return 'unregistered'
       end
       value
     end
