@@ -19,10 +19,34 @@ describe RDW::CarInfo do
     its("cylinder_capacity") { should eq 5999.0 }
     its("co2_combined") { should eq 490.0 }
     its("color") { should eq "ROOD" }
+    its("first_color") { should eq "ROOD" }
+    its("second_color") { should eq "Niet geregistreerd" }
     its("fuel_type") { should eq "Benzine" }
     its("brand") { should eq "FERRARI" }
     its("energy_label") { should eq "G" }
     its("inspect") { should eq "<RDW::CarInfo license_plate:'9KJT45' brand:'FERRARI' fuel_type:'Benzine'>" }
+
+  end
+
+  context "use formatted values, given the license plate of a Ferrari" do
+
+    before :each do
+      RDW.configure do |config|
+        config.format_values = true
+      end
+    end
+
+    let(:license_plate) { "9KJT45" }
+    before { VCR.eject_cassette }
+    before { VCR.insert_cassette("ferrari_9KJT45") }
+    subject { described_class.new(license_plate) }
+
+    it { should be_a RDW::CarInfo }
+
+    its("first_color") { should eq "red" }
+    its("second_color") { should eq "unknown" }
+    its("fuel_type") { should eq "gasoline" }
+
   end
 
   context "given the license plate of a New Beetle" do
@@ -69,6 +93,10 @@ describe RDW::CarInfo do
     its("brand") { should eq "VOLKSWAGEN" }
     its("energy_label") { should eq "" }
     its("inspect") { should eq "<RDW::CarInfo license_plate:'67YA03' brand:'VOLKSWAGEN' fuel_type:'LPG (Liquified Petrol Gas)'>" }
+  end
+
+  after :each do
+    RDW.reset
   end
 
 end
