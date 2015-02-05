@@ -39,7 +39,7 @@ RDW.configure do |config|
   #   - 'Niet geregistreerd' will be translated to 'unregistered'
   #
   # Default value: false
-  config.format_values = true
+  config.translate_values = true
 end
 ```
 Add the configuration in the `config/initializers` folder, name the file `rdw.rb` (any name will work).
