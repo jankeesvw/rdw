@@ -31,12 +31,12 @@ RDW.configure do |config|
   # Default value: rdw_
   config.cache_prefix = 'rdw_data_'
   
-  # If set to true, Dutch values will be converted to english. 
+  # If set to true, Dutch values will be translated to english.
   # This applies to colors, fuel types and unregistered values
   # For example:
-  #   - 'ROOD' will be converted to 'red'
-  #   - 'Benzine' will be converted to 'gasoline'
-  #   - 'Niet geregistreerd' will be converted to 'unregistered'
+  #   - 'ROOD' will be translated to 'red'
+  #   - 'Benzine' will be translated to 'gasoline'
+  #   - 'Niet geregistreerd' will be translated to 'unregistered'
   #
   # Default value: false
   config.format_values = true

@@ -42,19 +42,19 @@ module RDW
 
     def first_color
       color = parse('Eerstekleur')
-      RDW.configuration.format_values && color != 'unregistered'  ? ValueConverter.convert_color(color) : color
+      RDW.configuration.translate_values && color != 'unregistered'  ? ValueConverter.translate_color(color) : color
     end
 
     alias_method :color, :first_color
 
     def second_color
       color = parse('Tweedekleur')
-      RDW.configuration.format_values && color != 'unregistered' ? ValueConverter.convert_color(color) : color
+      RDW.configuration.translate_values && color != 'unregistered' ? ValueConverter.translate_color(color) : color
     end
 
     def fuel_type
       fuel_type = parse('Hoofdbrandstof')
-      RDW.configuration.format_values && fuel_type != 'unregistered' ? ValueConverter.convert_fuel_type(fuel_type) : fuel_type
+      RDW.configuration.translate_values && fuel_type != 'unregistered' ? ValueConverter.translate_fuel_type(fuel_type) : fuel_type
     end
 
     def brand
@@ -90,7 +90,7 @@ module RDW
     def parse(attribute_name)
       begin
         value = @xml.xpath("//d:#{attribute_name.to_s}").text
-        RDW.configuration.format_values ? ValueConverter.convert_unregistered(value) : value
+        RDW.configuration.translate_values ? ValueConverter.translate_unregistered(value) : value
       rescue
         nil
       end

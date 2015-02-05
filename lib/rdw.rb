@@ -1,5 +1,5 @@
 require 'rdw/version'
-require 'rdw/value_converter'
+require 'rdw/value_translator'
 require 'rdw/configuration'
 require 'rdw/car_info'
 require 'open-uri'

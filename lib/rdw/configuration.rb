@@ -9,19 +9,19 @@ module RDW
     # Default value: rdw_
     attr_accessor :cache_prefix
 
-    # If set to true, Dutch values will be converted to english.
+    # If set to true, Dutch values will be translated to english.
     # This applies to colors, fuel types and unregistered values
     # For example:
-    #   - 'ROOD' will be converted to 'red'
-    #   - 'Benzine' will be converted to 'gasoline'
-    #   - 'Niet geregistreerd' will be converted to 'unregistered'
+    #   - 'ROOD' will be translated to 'red'
+    #   - 'Benzine' will be translated to 'gasoline'
+    #   - 'Niet geregistreerd' will be translated to 'unregistered'
     # Default value: false
-    attr_accessor :format_values
+    attr_accessor :translate_values
 
     def initialize
       @cache = nil
       @cache_prefix = 'rdw_'
-      @format_values = false
+      @translate_values = false
     end
 
   end

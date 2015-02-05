@@ -19,7 +19,7 @@ module RDW
         'diversen' => 'miscellaneous'
     }
 
-    # Fuel types as expected from the RDW api converted to english names.
+    # Fuel types as expected from the RDW api translated to english names.
     @fuel_types = {
         'benzine' => 'gasoline',
         'liquified natural gas' => 'lng',
@@ -36,21 +36,21 @@ module RDW
 
 
     # Return the given +fuel_type+ in english. If no fuel_type is found, the original fuel_type will be returned.
-    def self.convert_fuel_type(fuel_type)
+    def self.translate_fuel_type(fuel_type)
       return nil if @fuel_types[fuel_type.downcase].nil?
       new_fuel_type = @fuel_types[fuel_type.downcase]
       new_fuel_type ? new_fuel_type : fuel_type
     end
 
     # Return the given +color+ in english. If no color is found, the original color will be returned.
-    def self.convert_color(color)
+    def self.translate_color(color)
       return nil if @colors[color.downcase].nil?
       new_color = @colors[color.downcase]
       new_color ? new_color : color
     end
 
     # Returns 'unregistered' instead of 'Niet geregistreerd'
-    def self.convert_unregistered(value)
+    def self.translate_unregistered(value)
       if value.downcase == 'niet geregistreerd'
         return 'unregistered'
       end

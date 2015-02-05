@@ -28,11 +28,11 @@ describe RDW::CarInfo do
 
   end
 
-  context "use formatted values, given the license plate of a Ferrari" do
+  context "use translated values, given the license plate of a Ferrari" do
 
     before :each do
       RDW.configure do |config|
-        config.format_values = true
+        config.translate_values = true
       end
     end
 
