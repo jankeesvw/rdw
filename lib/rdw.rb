@@ -1,77 +1,22 @@
-require "rdw/version"
-require "net/http"
-require "nokogiri"
+require 'rdw/version'
+require 'rdw/value_translator'
+require 'rdw/configuration'
+require 'rdw/car_info'
+require 'open-uri'
+require 'nokogiri'
 
 module RDW
 
-  class CarInfo
-
-    def initialize(license_plate)
-      @license_plate = license_plate
-      perform_request!
-    end
-
-    def number_of_cylinders
-      parse("Aantalcilinders").to_i
-    end
-
-    def number_of_seats
-      parse("Aantalzitplaatsen").to_i
-    end
-
-    def BPM
-      parse("BPM").to_i
-    end
-
-    def fuel_efficiency_main_road
-      parse("Brandstofverbruikbuitenweg").to_f
-    end
-
-    def fuel_efficiency_city
-      parse("Brandstofverbruikstad").to_f
-    end
-
-    def fuel_efficiency_combined
-      parse("Brandstofverbruikgecombineerd").to_f
-    end
-
-    def cylinder_capacity
-      parse("Cilinderinhoud").to_f
-    end
-
-    def co2_combined
-      parse("CO2uitstootgecombineerd").to_f
-    end
-
-    def color
-      parse("Eerstekleur")
-    end
-
-    def fuel_type
-      parse("Hoofdbrandstof")
-    end
-
-    def brand
-      parse("Merk")
-    end
-
-    def energy_label
-      parse("Zuinigheidslabel")
-    end
-
-    def inspect
-      "<RDW::CarInfo license_plate:'#{@license_plate}' brand:'#{brand}' fuel_type:'#{fuel_type}'>"
-    end
-
-  private
-
-    def parse(attribute_name)
-      @xml.xpath("//d:#{attribute_name.to_s}").text
-    end
-
-    def perform_request!
-      response = Net::HTTP.get_response(URI("https://api.datamarket.azure.com/Data.ashx/opendata.rdw/VRTG.Open.Data/v1/KENT_VRTG_O_DAT('#{@license_plate}')"))
-      @xml = Nokogiri::XML(response.body)
-    end
+  def self.configuration
+    @configuration ||=  Configuration.new
   end
+
+  def self.configure
+    yield(configuration) if block_given?
+  end
+
+  def self.reset
+    @configuration = Configuration.new
+  end
+
 end
