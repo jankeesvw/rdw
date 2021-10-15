@@ -57,7 +57,7 @@ require "RDW"
 
 # Notice
 There is a rate limit on this api (50,000 per month), more information can be found here: [rdw.nl](http://www.rdw.nl/Zakelijk/Paginas/Open-data.aspx).
-More details for the service can be found here: [http://www.rdw.nl/SiteCollectionDocuments/Over%20RDW/Naslagwerk/Beschrijving%20dataset%20Voertuigen.pdf].
+More details for the service can be found [here](https://www.rdw.nl/-/media/rdw/rdw/pdf/sitecollectiondocuments/over-rdw/naslagwerk/beschrijving-dataset-voertuigen-v30.pdf).
 
 ## Contributing
 
