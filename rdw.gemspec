@@ -21,7 +21,7 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "bundler", "~> 2.0"
   spec.add_development_dependency "rake"
-  spec.add_development_dependency "rspec", "~> 3.10.0"
+  spec.add_development_dependency "rspec", "~> 3.13.2"
   spec.add_development_dependency "rspec-its"
   spec.add_development_dependency "guard-rspec"
   spec.add_development_dependency "webmock"
